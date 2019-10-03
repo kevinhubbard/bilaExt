@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name": "bilaExt",
+	"version": "1.1",
+	"description": "removes unwanted browser nodes.",
+	"icons": {
+		"48": "icons/test.png"
+	},
+	"content_scripts": [
+		{
+			"matches": ["*://*.bilasport.net/*"],
+			"js": ["bilaext.js"]
+		}
+	]
+}
