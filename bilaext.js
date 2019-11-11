@@ -1,6 +1,13 @@
-document.getElementsByClassName('right_side')[0].remove();
-document.getElementById('gamesinfo').remove();
-document.getElementById('responsive').remove();
+window.addEventListener('load', (event) => {
 
+	document.getElementById('responsive').style.display = 'none';
+	document.getElementsByClassName('right_side')[0].style.display = 'none';
+	document.getElementById('darkmode').style.display = 'none';
+	document.getElementById('gamesinfo').style.display = 'none';
+	document.getElementsByClassName('bg_left_side')[0].style.float = 'none';
+	document.getElementsByClassName('bg_left_side')[0].style.margin = '0 auto';
 
-setTimeout(function(){ document.getElementsByClassName('cc-window')[0].remove() }, 3000);
+	setTimeout(()=>{
+		document.getElementsByClassName('cc-window')[0].style.display = 'none';
+	}, 3000);
+});
